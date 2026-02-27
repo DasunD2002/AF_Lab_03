@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Sheet 03</title>
+  </head>
+  <body>
+    <h2>Java Script Callback</h2>
+  </body>
+
+  <script>
+    function greeting(name) {
+      alert(`Hello, ${name}`);
+    }
+    function processUserInput(callback) {
+      const name = prompt("Please enter your name.");
+      callback(name);
+    }
+    processUserInput(greeting);
+  </script>
+</html>
